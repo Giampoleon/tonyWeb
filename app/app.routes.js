@@ -1,14 +1,17 @@
-'use strict';
+    angular.module('app')
+    .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
-// Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+        $stateProvider
+            .state('home', {
+            	url: "/home",
+                views:{
+                    "scaffold":{
+                        templateUrl: "app/components/scaffold/scaffold.html",
+                        controller: "scaffoldCtrl as vm"
+                    }
+                }
+            })
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+            $urlRouterProvider.otherwise("home");
+
+    }])
