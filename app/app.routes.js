@@ -27,6 +27,14 @@
                     }
                 }
             })
+            .state('menu.news', {
+                views: {
+                    'contain': {
+                        templateUrl: "app/components/news/news.html",
+                        //controller: "homeCtrl as vm"
+                    }
+                }
+            })
 
 
             $urlRouterProvider.otherwise("/");

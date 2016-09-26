@@ -1,25 +1,18 @@
-/* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+body{
+
+	width: 100%;
+	background: rgb(58,90,115);
 }
 
-.menu:before {
-  content: "[";
+.container{
+	height: 100%;
+	padding-top: 1.5%;
+	width: 80%;
+	margin-left: 10%;
+	background: white;
 }
 
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+._md-nav-bar-list{
+	padding-left: 2.5%;
 }
