@@ -15,7 +15,7 @@
                 views: {
                     'contain': {
                         templateUrl: "app/components/home/home.html",
-                        //controller: "homeCtrl as vm"
+                        controller: "homeCtrl as vm"
                     }
                 }
             })
