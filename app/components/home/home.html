@@ -1,10 +1,11 @@
 <div class="container-fluid">
+<br><br>
   <div class="row">
     <div class="col-md-12 row-padding" >
-    <div style="height: 305px">
-    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+    <div style="height: 100%">
+    <div uib-carousel active="vm.active" interval="vm.myInterval" no-wrap="vm.noWrapSlides">
     <div uib-slide ng-repeat="slide in vm.slides track by slide.id" index="slide.id">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <img ng-src="{{slide.image}}" height="380" width="620" style="margin:auto;">
         <div class="carousel-caption">
           <h4>Slide {{slide.id}}</h4>
           <p>{{slide.text}}</p>
