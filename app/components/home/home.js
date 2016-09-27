@@ -1,13 +1,8 @@
 'use strict';
 angular.module('app')
-	.controller('homeCtrl', [function () {
+	.controller('homeCtrl', ['mockService',function (mockService) {
 		var vm = this;
-
-		vm.algo = function(){
-
-			console.log("hola");
-
-			//llamar a una funcion que me cambie de estado statego(home)
-		}
+		vm.slides = mockService.images();
+		console.log(vm.slides)
 
 	}]);
