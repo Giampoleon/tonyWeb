@@ -1,10 +1,7 @@
 {
-  "name": "angular-seed",
+  "name": "seriesFy",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
-  "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
     "http-server": "^0.9.0",
@@ -20,7 +17,7 @@
     "postinstall": "bower install",
 
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1",
+    "start": "http-server -a localhost -p 3000 -c-1",
 
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
