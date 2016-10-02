@@ -5,7 +5,7 @@ angular.module('app')
 		vm.slides = mockService.images();
 		vm.active = 0;
 		vm.noWrapSlides = false;
-		vm.myInterval = 5000;
+		vm.myInterval = 4000;
 		console.log(vm.slides)
 
 	}]);
